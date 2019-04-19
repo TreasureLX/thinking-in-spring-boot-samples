@@ -4,33 +4,39 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.lx</groupId>
-		<artifactId>thinking-in-spring-boot-samples</artifactId>
+		<artifactId>spring-boot-2-x-samples</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.lx</groupId>
-	<artifactId>spring-boot-2-x-samples</artifactId>
+	<artifactId>first-app-by-gui</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-2-x-samples</name>
+	<name>first-app-by-gui</name>
 	<description>Demo project for Spring Boot</description>
-	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<spring-boot.version>2.0.2.RELEASE</spring-boot.version>
 	</properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<!-- Spring Boot POM -->
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-loader</artifactId>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
